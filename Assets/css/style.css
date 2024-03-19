@@ -1,0 +1,412 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lora", serif;
+}
+body {
+	margin: 0;
+	padding:0;
+	background-color:beige;
+}
+nav {
+	width: 100%;
+	
+}
+header{
+	height: 0px;
+}
+.header-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	right: 0;
+	left: 0;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5));
+	box-shadow: 4px 4px 8px;
+	opacity: .78;
+	height: 80px;
+}
+.header-container .logo-container{
+	height: 100px;
+}
+.header-container .logo-container img{
+	height: inherit;
+    width: auto;
+}
+.header-container ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+.header-container ul li a {
+	text-decoration: none;
+	color: white;
+	font-weight: 400;
+	font-size: 15px;
+	font-weight: 600;
+	font-size: 18px;
+}
+.header-container ul li a::after{
+	content: '';
+	width: 0;
+	height: 2px;
+	background-color: #D86420;
+	display: block;
+	transition: 0.3s linear;
+}
+.header-container ul li a:hover{
+	color:#D86420;
+}
+.header-container ul li a:hover::after{
+	width: 100%;
+}
+
+
+
+/* Hero */
+.hero_section {
+	display: flex;
+    height: 100vh;
+	align-items: center;
+	justify-content: space-around;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.7)),url("C:/Users/user/OneDrive/Documents/web dev1/Assets/Images/Chickens/2.jpeg");
+	background-size: cover;
+	text-align: center;
+}
+.hero_content {
+	text-align: center;
+	width: 50%;;
+}
+.hero_content h1{
+	font-size: 50px;
+	color: white;
+}
+
+.hero_content p {
+	margin-top: 10px;
+	width: 650px;
+	color: white;
+	font-size: 20px;
+
+}
+.hero_section .img img{
+	width: 500px;
+	position: left;
+
+}
+
+/* 1st Section */
+.content1{
+	padding-top: 15px;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+}
+.about_right {
+	margin: 30px;
+	width: 50%;
+}
+.about_right h2 {
+	margin-bottom: 30px;
+	font-size: 35px;
+	color: black;
+}
+.about_right p {
+	font-size: 15px;
+	color: black;
+}
+.about_right .btn{
+	background: #E2af63;
+	color: black;
+	padding: 12px 15px;
+	text-decoration: none;
+	position: absolute;
+    margin-top: 5em
+
+}
+.about_right .btn:hover{
+	background: #D86420;
+	color: white;
+	transition: 0.3s all ease-in-out;
+}
+
+.about_right .social-media-icon{
+    padding-top: 30px;
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+}
+.about_right .social-media-icon .bxl-facebook-circle,
+.about_right .social-media-icon .bxl-twitter,
+.about_right .social-media-icon .bxl-twitch,
+.about_right .social-media-icon .bxl-instagram,
+.about_right .social-media-icon .bxl-linkedin-square{
+	color: black;
+}
+.about_left{
+	width: 50%;
+	/*overflow: hidden;*/
+}
+.about_left img{
+	height: 500px;
+	width: auto;
+}
+.about_left, .about_right{
+	padding: 10px;
+}
+
+
+
+/* 2nd Section */
+.content2{
+	height: 70vh;
+	/*background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.7)),url("C:/Users/user/OneDrive/Documents/web dev1/Assets/Images/Chickens/Fried-Chicken-Roundup.jpg");	
+	background-size: cover;*/
+	text-align: center;
+	
+}
+.content2 h1{
+	text-align: center;
+	font-size: 35px;
+	padding: 40px;
+	color:black;
+}
+.content2 .fun_facts .contents{
+	display: flex;
+
+}
+
+.content2 .fun_facts .contents p{
+	font-size: 16px;
+	text-align: center;
+	color: black;
+	font-weight: 400;
+	margin-top: 15px;
+	padding: 15px;
+	
+}
+.content2 .fun_facts .contents .fact1{
+	width: 100%;
+	margin: 15px;
+
+}
+.content2 .fun_facts .contents .fact2{
+	width: 100%;
+	margin: 15px;
+
+}
+.content2 .fun_facts .contents .fact3{
+	width: 100%;
+	margin: 15px;
+
+}
+.content2 .fun_facts .contents .fact1 img{
+	width: 100px;
+	/*background-color: white;*/
+}
+.content2 .fun_facts .contents .fact2 img{
+	width: 100px;
+	/*background-color: white;*/
+}
+.content2 .fun_facts .contents .fact3 img{
+	width: 100px;
+	/*background-color: white;*/
+}
+/* 3rd Section */
+.menu{
+	width: 100%;
+
+}
+.menu h1{
+	font-size: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2.5em;
+}
+.menu .cards_container{
+	width: 95%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 15px;
+	padding: 60px;
+}
+.menu .cards_container .menu_cards{
+	width: 325px;
+	height: 480px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.menu .cards_container .menu_cards .menu_img{
+	width: 300px;
+	height: 245px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.cards_container .menu_cards .menu_img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	text-align: center;
+}
+.menu_icon img{
+	width: 50px;
+}
+.menu_cards .menu_info h2{
+	text-align: center;
+	margin-top: 10px;
+}
+.menu_cards .menu_info p{
+	text-align: center;
+	margin-top: 10px;
+	line-height: 20px;
+	padding: 10px;
+}
+.menu_cards .menu_icon{
+	text-align: center;
+}
+
+.menu_cards .menu_info .menu_btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+	background: #E2af63;
+	padding: 8px 10px;
+	margin: 0 80px;
+}
+.menu_cards .menu_info .menu_btn:hover{
+	background-color: #D86420;
+	color: white;
+	transition: 0.3s all ease-in-out;
+}
+/* 4th section */
+
+.last_section{
+	padding-top: 15px;
+	height: 100vh;
+	text-align: left;
+	background-image:  url("C:/Users/user/OneDrive/Documents/web dev1/Assets/Images/Chickens/22039fca-5dd7-4618-8970-4c442d799843-transformed.png");
+	background-size: cover;
+	object-fit: cover;
+}
+.last_content{
+	margin-top: 3em;
+    width: 55%;
+    padding-top: 10rem;
+    padding-left: 2em;
+    text-align: center;
+    
+}
+.last_content h2{
+	font-size: 30px;
+}
+.last_content p{
+    font-size: 15px;
+    margin-bottom: 2em;
+    width: 100%;
+    padding: 1em 3em 0 3em
+}
+.last_content .last_btn{
+	background: #E2af63;
+    color: black;
+    padding: 12px 15px;
+    text-decoration: none;
+    margin-top: 2em;
+   
+}
+.last_content .last_btn:hover{
+	background: #D86420;
+	color: white;
+	transition: 0.3s all ease-in-out;
+}
+
+
+.ft{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	padding-top: 2em;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.7)),url("C:/Users/user/OneDrive/Documents/web dev1/Assets/Images/Chickens/2.jpeg");
+	background-size: cover;
+	color: white;
+}
+.logo img{
+	height: 100px;
+	width: auto;
+}
+.ft_left,
+.ft_right{
+	width: 50%;
+
+}
+
+.ft_left{
+	padding: 0 0 0 5em;
+	width: 40%;
+}
+.ft_right{
+	padding: 0 5em 0 3em;
+	width: 40%;
+	text-decoration: none;
+}
+.footer-button {
+    padding: 10px 10px;
+    border-style: none;
+    background: #E2af63;
+	border-radius: 30px;
+}
+.footer-button:hover{
+    color: white;
+    background: #D86420;
+    font-weight: 700;
+}
+button:hover{
+    color: black;
+}
+.col-left form label {
+    color: white;
+}
+
+input.footer-email {
+    width: 204px;
+    border-radius: 20px;
+    font-size: 10px;
+    padding-top: 15px;
+    margin-bottom: 8px;
+}
+.ft_left,
+.ft_right h3{
+	padding-top: 30px;
+}
+
+.ft_left span.subscription{
+	padding-top: 10px;
+}
+
+.ft_left form{
+	display: table-caption;
+	margin-top: 10px;
+}
+
+.ft_right .social-media-icon {
+    padding-top: 10px;
+    font-size: 25px;
+}
+.ft_right p a {
+    text-decoration: none;
+	color: white;
+}
+.ft_right .social-media-icon .bxl-facebook-circle,
+.ft_right .social-media-icon .bxl-twitter,
+.ft_right .social-media-icon .bxl-twitch,
+.ft_right .social-media-icon .bxl-instagram,
+.ft_right .social-media-icon .bxl-linkedin-square{
+	color: white;
+}
