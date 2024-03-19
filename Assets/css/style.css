@@ -333,7 +333,7 @@ header{
 	justify-content: center;
 	padding: 10px;
 	padding-top: 2em;
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.7)),url("/Assets/Images/Chickens/2.jpeg");
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.7)),url("C:\Users\user\OneDrive\Documents\Web_systems_project\Assets\Images\Chickens\2.jpeg");
 	background-size: cover;
 	color: white;
 }
@@ -377,8 +377,7 @@ button:hover{
 input.footer-email {
     width: 204px;
     border-radius: 20px;
-    font-size: 10px;
-    padding-top: 15px;
+    font-size: 17px;
     margin-bottom: 8px;
 }
 .ft_left,
