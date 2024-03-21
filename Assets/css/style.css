@@ -70,7 +70,7 @@ header{
     height: 100vh;
 	align-items: center;
 	justify-content: space-around;
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.7)),url("./Assets/Images/Chickens/2.jpeg");
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.7)),url("../Images/Chickens/2.jpeg");
 	background-size: cover;
 	text-align: center;
 }
@@ -292,7 +292,7 @@ header{
 	padding-top: 15px;
 	height: 100vh;
 	text-align: left;
-	background-image:  url("./Assets/Images/Chickens/22039fca-5dd7-4618-8970-4c442d799843-transformed.png");
+	background-image:  url("../Images/Chickens/22039fca-5dd7-4618-8970-4c442d799843-transformed.png");
 	background-size: cover;
 	object-fit: cover;
 }
@@ -333,7 +333,7 @@ header{
 	justify-content: center;
 	padding: 10px;
 	padding-top: 2em;
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.7)),url("./Assets/Images/Chickens/2.jpeg");
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.7)),url("../Images/Chickens/2.jpeg");
 	background-size: cover;
 	color: white;
 }
